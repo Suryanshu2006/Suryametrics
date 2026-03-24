@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Suryametrics",
+  "version": "1.0.0",
+  "description": "Track time spent on websites, classify productivity, and view weekly analytics.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "idle",
+    "alarms",
+    "notifications"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://localhost:5000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "options_page": "options/options.html"
+}
